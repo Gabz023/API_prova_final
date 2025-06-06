@@ -3,7 +3,7 @@
 namespace App\Repositories;
 use App\Models\Livro;
 
-class RepositoryLivro
+class LivroRepository
 {
     public function get()
     {

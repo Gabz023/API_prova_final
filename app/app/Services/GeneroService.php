@@ -2,14 +2,14 @@
 
 namespace App\Services;
 
-use App\Repositories\RepositoryGenero;
+use App\Repositories\GeneroRepository;
 use App\Models\Genero;
 
-class ServiceGenero
+class GeneroService
 {
-    private RepositoryGenero $generoRepository;
+    private GeneroRepository $generoRepository;
 
-    public function __construct(RepositoryGenero $generoRepository)
+    public function __construct(GeneroRepository $generoRepository)
     {
         $this->generoRepository = $generoRepository;
     }

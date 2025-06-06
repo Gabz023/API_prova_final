@@ -3,7 +3,7 @@
 namespace App\Repositories;
 use App\Models\Autor;
 
-class RepositoryAutor
+class AutorRepository
 {
     public function get()
     {

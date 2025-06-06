@@ -2,11 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ControllerAutor;
-use App\Http\Controllers\ControllerGenero;
-use App\Http\Controllers\ControllerLivro;
-use App\Http\Controllers\ControllerReview;
-use App\Http\Controllers\ControllerUsuario;
+use App\Http\Controllers\AutorController;
+use App\Http\Controllers\GeneroController;
+use App\Http\Controllers\LivroController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\UsuarioController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();

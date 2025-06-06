@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\ServiceReview;
+use App\Services\ReviewService;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use App\Http\Requests\ReviewStoreRequest;
@@ -10,11 +10,11 @@ use App\Http\Requests\ReviewUpdateRequest;
 use App\Http\Resources\ReviewResource;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-class ControllerReview extends Controller
+class ReviewController extends Controller
 {
-    private ServiceReview $reviewService;
+    private ReviewService $reviewService;
 
-    public function __construct(ServiceReview $reviewService)
+    public function __construct(ReviewService $reviewService)
     {
         $this->reviewService = $reviewService;
     }

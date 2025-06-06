@@ -2,14 +2,14 @@
 
 namespace App\Services;
 
-use App\Repositories\RepositoryAutor;
+use App\Repositories\AutorRepository;
 use App\Models\Autor;
 
-class ServiceAutor
+class AutorService
 {
-    private RepositoryAutor $autorRepository;
+    private AutorRepository $autorRepository;
 
-    public function __construct(RepositoryAutor $autorRepository)
+    public function __construct(AutorRepository $autorRepository)
     {
         $this->autorRepository = $autorRepository;
     }

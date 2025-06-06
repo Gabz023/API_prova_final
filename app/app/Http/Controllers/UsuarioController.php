@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\ServiceUsuario;
+use App\Services\UsuarioService;
 use App\Http\Resources\UsuarioResource;
 use App\Http\Requests\UsuarioStoreRequest;
 use App\Http\Requests\UsuarioUpdateRequest;
@@ -12,11 +12,11 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 
 
-class ControllerUsuario extends Controller
+class UsuarioController extends Controller
 {
-    private ServiceUsuario $usuarioService;
+    private UsuarioService $usuarioService;
 
-    public function __construct(ServiceUsuario $usuarioService)
+    public function __construct(UsuarioService $usuarioService)
     {
         $this->usuarioService = $usuarioService;
     }

@@ -3,16 +3,16 @@
 namespace App\Services;
 
 use App\Model\Livro;
-use App\Repositories\RepositoryLivro;
+use App\Repositories\LivroRepository;
 use App\Http\Resources\LivroResource;
 
 
-class ServiceLivro
+class LivroService
 {
 
-    private RepositoryLivro $livroRepository;
+    private LivroRepository $livroRepository;
 
-    public function __construct(RepositoryLivro $livroRepository)
+    public function __construct(LivroRepository $livroRepository)
     {
         $this->livroRepository = $livroRepository;
     }

@@ -3,14 +3,14 @@
 namespace App\Services;
 
 use App\Model\Review;
-use App\Repositories\RepositoryReview;
+use App\Repositories\ReviewRepository;
 
-class ServiceReview
+class ReviewService
 {
 
-    private RepositoryReview $reviewRepository;
+    private ReviewRepository $reviewRepository;
 
-    public function __construct(RepositoryReview $reviewRepository)
+    public function __construct(ReviewRepository $reviewRepository)
     {
         $this->reviewRepository = $reviewRepository;
     }

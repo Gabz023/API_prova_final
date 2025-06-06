@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\ServiceAutor;
+use App\Services\AutorService;
 use App\Http\Resources\AutorResource;
 use App\Http\Requests\AutorStoreRequest;
 use App\Http\Requests\AutorUpdateRequest;
@@ -11,11 +11,11 @@ use Illuminate\Http\JsonResponse;
 use App\Http\Resources\LivroResource;
 
 
-class ControllerAutor extends Controller
+class AutorController extends Controller
 {
-    private ServiceAutor $autorService;
+    private AutorService $autorService;
 
-    public function __construct(ServiceAutor $autorService)
+    public function __construct(AutorService $autorService)
     {
         $this->autorService = $autorService;
     }

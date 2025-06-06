@@ -3,7 +3,7 @@
 namespace App\Repositories;
 use App\Models\Genero;
 
-class RepositoryGenero
+class GeneroRepository
 {
     public function get()
     {

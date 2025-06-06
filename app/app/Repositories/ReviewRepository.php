@@ -3,7 +3,7 @@
 namespace App\Repositories;
 use App\Models\Review;
 
-class RepositoryReview
+class ReviewRepository
 {
     public function get()
     {

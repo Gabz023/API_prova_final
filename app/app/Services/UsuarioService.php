@@ -3,13 +3,13 @@
 namespace App\Services;
 
 use App\Model\Usuario;
-use App\Repositories\RepositoryUsuario;
+use App\Repositories\UsuarioRepository;
 
-class ServiceUsuario
+class UsuarioService
 {
-    private RepositoryUsuario $usuarioRepository;
+    private UsuarioRepository $usuarioRepository;
 
-    public function __construct(RepositoryUsuario $usuarioRepository)
+    public function __construct(UsuarioRepository $usuarioRepository)
     {
         $this->usuarioRepository = $usuarioRepository;
     }

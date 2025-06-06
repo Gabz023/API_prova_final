@@ -7,18 +7,18 @@ use App\Http\Requests\LivroStoreRequest;
 use App\Http\Requests\LivroUpdateRequest;
 use App\Http\Resources\LivroResource;
 use Illuminate\Http\JsonResponse;
-use App\Services\ServiceLivro;
+use App\Services\LivroService;
 use App\Http\Resources\ReviewResource;
 use App\Http\Resources\AutorResource;
 use App\Http\Resources\GeneroResource;
 
 
 
-class ControllerLivro extends Controller
+class LivroController extends Controller
 {
-    private ServiceLivro $livroService;
+    private LivroService $livroService;
 
-    public function __construct(ServiceLivro $livroService)
+    public function __construct(LivroService $livroService)
     {
          $this->livroService = $livroService;
     }

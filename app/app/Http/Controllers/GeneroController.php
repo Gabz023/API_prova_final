@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\ServiceGenero;
+use App\Services\GeneroService;
 use App\Http\Requests\GeneroUpdateRequest;
 use App\Http\Requests\GeneroStoreRequest;
 use App\Http\Resources\GeneroResource;
 use App\Http\Resources\LivroResource;
 use Illuminate\Http\JsonResponse;
 
-class ControllerGenero extends Controller
+class GeneroController extends Controller
 {
-    private ServiceGenero $generoService;
+    private GeneroService $generoService;
 
-    public function __construct(ServiceGenero $generoService)
+    public function __construct(GeneroService $generoService)
     {
         $this->generoService = $generoService;
     }

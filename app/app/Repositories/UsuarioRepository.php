@@ -3,7 +3,7 @@
 namespace App\Repositories;
 use App\Models\Usuario;
 
-class RepositoryUsuario
+class UsuarioRepository
 {
     public function get()
     {
