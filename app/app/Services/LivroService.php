@@ -52,7 +52,7 @@ class LivroService
         return $livro;
     }
 
-    public function getComAutor()
+    public function getComAutores()
     {
         return $this->livroRepository->getComAutor();
     }
@@ -69,7 +69,7 @@ class LivroService
 
     public function findGenero(int $id)
     {
-        return $this->livroRepository->findGeneros($id);
+        return $this->livroRepository->findGenero($id);
     }
 
       public function findReview(int $id)

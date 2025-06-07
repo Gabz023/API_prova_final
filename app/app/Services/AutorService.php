@@ -28,7 +28,7 @@ class AutorService
         return $autor;
     }
 
-    public function datails(int $id)
+    public function details($id)
     {
         $autor = $this->autorRepository->details($id);
         

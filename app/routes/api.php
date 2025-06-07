@@ -34,11 +34,11 @@ Route::controller(GeneroController::class)->group(function () {
 
 Route::controller(LivroController::class)->group(function () {
     Route::get('/livros', 'get');
-    Route::get('/livros/generos/autores/reviews','getComGeneroAutorReview');
+    Route::get('/livros/generos/autores/reviews','getComAutorGeneroReview');
     Route::get('/livros/autor', 'getComAutores');
     Route::get('/livros/generos', 'getComGeneros');
     Route::get('/livros/autor/{id}', 'findAutor');
-    Route::get('/livros/generos/{id)', 'findGenero');
+    Route::get('/livros/generos/{id}', 'findGenero');
     Route::get('/livros/reviews/{id}', 'findReview');
     Route::get('/livros/{id}', 'details');
     Route::post('/livros', 'store');

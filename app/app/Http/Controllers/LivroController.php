@@ -106,7 +106,7 @@ class LivroController extends Controller
     {
         $livro = $this->livroService->getComGeneros();
 
-        return BookResource::collection($livro);
+        return livroResource::collection($livro);
     }
 
     public function findGenero(int $id)
@@ -143,9 +143,9 @@ class LivroController extends Controller
     }
 
 
-    public function getComGeneroAutorReview()
+    public function getComAutorGeneroReview()
     {
-        $livro = $this->livroService->getComGeneroAutorReview();
+        $livro = $this->livroService->getComAutorGeneroReview();
         
         return LivroResource::collection($livro);
     }

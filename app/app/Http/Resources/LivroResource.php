@@ -17,10 +17,10 @@ class LivroResource extends JsonResource
         return [
             'id'=> $this->id,
             'title'=> $this->title,
-            'author' => new AutorResource($this->whenLoaded('autores')),
+            'author' => new AutorResource($this->whenLoaded('autor')),
             'synopsis'=> $this->synopsis,
-            'gender_id' => new GeneroResource($this->whenLoaded('generos')),
-            'review' => ReviewResource::collection($this->whenLoaded('reviews')),
+            'gender_id' => new GeneroResource($this->whenLoaded('genero')),
+            'review' => ReviewResource::collection($this->whenLoaded('review')),
         ];
     }
 }

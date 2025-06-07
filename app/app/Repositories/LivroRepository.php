@@ -55,7 +55,7 @@ class LivroRepository
         return $livro;
     }
 
-    public function findGeneros(int $id)
+    public function findGenero(int $id)
     {
         $livro = $this->details($id);
         $genero = $livro->genero;

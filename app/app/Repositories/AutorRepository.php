@@ -42,7 +42,7 @@ class AutorRepository
         return $autor;
     }
 
-    public function findLivros(int $id)
+    public function findLivro(int $id)
     {
         $autor = $this->details($id);
         $livro = $autor->livros;
